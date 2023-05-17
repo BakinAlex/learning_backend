@@ -2,67 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>learningHTML</title>
-</head>
+    <title>learningFrontend</title>
+    <link rel="stylesheet" href="style.css"></head>
 <body>
-<table cellpadding="25">
-    <tr>
-        <td><img src="Photo.jpg"
-     alt="Фотография автора" height="200"></td>
-        <td><h1>Алексей Бакин</h1>
-<p>Я студент образовательной платформы
-    <strong>GeekBrains</strong>.</p>
-<p><em>Занимаюсь спортом, постоянно развиваюсь в умственном отношении,
-    вредных привычек не имею.</em></p></td>
-    </tr>
-</table>
-<hr color="#5FD1A5" size="2">
-<h2>Contacts</h2>
-<ul>
-    <li>
-        <a href="https://t.me/bakinalx" target="_blank">Telegram</a>
-    </li>
-    <li>
-        <span style="color:#5FD1A5">
-            <a href="tel:+79998887766">Тел: +7(999)888-77-66</a>
-        </span>
-    </li>
-</ul>
-<hr color="#5FD1A5" size="2">
-<h2>Опыт работы</h2>
-<table bgcolor="#5FD1A5">
-    <tr>
-        <th>Компания</th>
-        <th>Должность</th>
-        <th>Год</th>
-    </tr>
-    <tr>
-        <td>EPAM</td>
-        <td>Software Engineer</td>
-        <td>2016 - 2017</td>
-    </tr>
-    <tr>
-        <td>Software Outsorcing Services</td>
-        <td>Lead Backend</td>
-        <td>2017 - 2019</td>
-    </tr>
+    <div class="container">
+        <div class="info">
+            <img class="photo" src="Photo.jpg"
+             alt="Фотография автора">
+            <div class="info-text">
+                <h1>Алексей Бакин</h1>
+                <p>Я студент образовательной платформы
+                <strong>GeekBrains</strong>.</p>
+                <p><em>Занимаюсь спортом, постоянно развиваюсь в умственном отношении,
+                вредных привычек не имею.</em></p>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="link">
+                <a href="https://www.google.com/maps/" target="_blank">
+                    <img src="geo.png" alt="Геолокация" height="15">
+                    Russia, Krasnodar.
+                </a>
+            </div>
+            <div class="link">
+                <a href="https://t.me/" target="_blank">
+                    <img src="telegram.png" alt="Telegram" height="15">
+                    Telegram
+                </a>
+            </div>
+            <div class="link">
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="linkedin.png" alt="LinkedIn" height="15">
+                    LinkedIn
+                </a>
+            </div>
 
-</table>
-<hr color="#5FD1A5" size="2">
-<h2>Сообщить о проблеме</h2>
-<form action="/">
-    <label for="name">Ваше имя:</label>
-    <input  type="text" id="name">
-    <br>
-    <label for="email">Ваш Email:</label>
-    <input type="email" id="email">
-    <br>
-    <label for="text">Сообщение:</label>
-    <br>
-    <textarea id="text" rows="5" cols="50">Ссылки на контактные данные не действительны.</textarea>
-    <br>
-    <input type="submit">
-</form>
-<div id="number" class="phone mobile text num" style="color: #1f21ff" name="phone_number">+7(999)888-77-66</div>
+            <div class="link">
+                <a href="tel:+79098887766">
+                    <img src="tel.png" alt="Иконка телефона" height="15" >
+                    +7(999)888-77-66
+                </a>
+            </div>
+        </div>
+        <div class="card exp_bg">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <tr>
+                    <td>Software Outsorcing Services</td>
+                    <td>Lead Backend</td>
+                    <td>2017 - 2019</td>
+                </tr>
+                <tr>
+                    <td>EPAM</td>
+                    <td>Software Engineer</td>
+                    <td>2016 - 2017</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="card course_bg">
+            <h2>Курсы</h2>
+            <table class="table_course">
+                <tr>
+                    <td>GeekBrains</td>
+                    <td>Python разработчик</td>
+                </tr>
+            </table>
+        </div>
+        <div class="card err_bg">
+            <h2>Сообщить о проблеме</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form">
+                        <label for="name">Ваше имя:</label>
+                        <input  type="text" id="name">
+                    </div>
+                    <div class="form">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email">
+                    </div>
+                </div>
+                <div class="form">
+                    <label for="text">Сообщение:</label>
+                    <textarea id="text" rows="5" cols="50">Ссылки на контактные данные не действительны.</textarea>
+                </div>
+                <input class="btn" type="submit">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
